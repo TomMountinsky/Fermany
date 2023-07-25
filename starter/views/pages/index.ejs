@@ -1,0 +1,29 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<body>
+    <h1><%= title %> </h1>
+
+    <ul>
+        <% tours.forEach( (tour)=> { %> 
+            <hr>
+            <li>
+                <h2>
+                    <%= tour.name %>
+                </h2> 
+                <h4>Popis</h4>
+                <h5><%= tour.summary %></h5>
+                <p><%= tour.description %> </p>
+                <p>Vstupné: <%= tour.price %> Kč </p>
+                <p><%= tour.rating %> </p>
+                <a href=tour/<%= tour.slug %>>
+                    <button type="button", class="btn btn-secondary">Podrobnosti</button>
+                    </a>
+            </li> 
+            
+        <% }); %>
+
+</body>
+<%- include('../partials/footer') %>
+
+
+

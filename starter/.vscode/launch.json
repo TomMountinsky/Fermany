@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "msedge",
+            "name": "chrome://inspect",
+            "request": "launch",
+            "url": "chrome://inspect"
+        }
+    ]
+}

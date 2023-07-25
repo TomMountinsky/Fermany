@@ -1,0 +1,34 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<body>
+
+        <h1>Vytvořte nové představení</h1>
+    <form class="form">
+    
+        <div class="mb-3">
+            <label for="name" class="form-label">Název akce</label>
+            <input type="text" class="form-control" id="name" placeholder="R.U.R">
+        </div>
+        <div class="mb-3">
+            <label for="summary" class="form-label">Souhrn</label>
+            <textarea class="form-control" id="summary" placeholder="Souhr"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Popis</label>
+            <textarea class="form-control" id="description" placeholder="Popis představení"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Vstupné</label>
+            <textarea class="form-control" id="price" placeholder="250 - cena pouze v číslicích"></textarea>
+        </div>
+    
+    <button type="submit" class="btn btn-warning">Potvrdit</button>
+    
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/create.js"></script>
+    
+    </body>
+
+<%- include('../partials/footer') %>
